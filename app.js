@@ -6,7 +6,7 @@ async function compareJSONs() {
   resultContainer.innerHTML = `<p>⏳ Comparing...</p>`;
 
   try {
-    const response = await fetch("http://127.0.0.1:8000/compare", {
+    const response = await fetch("https://json-diff-backend.onrender.com/compare", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ input_a: inputA, input_b: inputB }),
