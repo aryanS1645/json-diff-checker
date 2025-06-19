@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JSON Diff Checker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <label class="switch">
+      <input type="checkbox" id="darkModeToggle" />
+      <span class="slider round"></span>
+    </label>
+    <span>Dark Mode</span>
+  </div>
+
+  <div class="container">
+    
+    <h1 class="heading">🧠 JSON Difference Checker</h1>
+    <textarea id="inputA" placeholder="Paste cURL or JSON A here..."></textarea>
+    <textarea id="inputB" placeholder="Paste cURL or JSON B here..."></textarea>
+    <button onclick="compareJSONs()">Compare JSONs</button>
+    <pre id="resultContainer"></pre>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
